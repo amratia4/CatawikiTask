@@ -16,3 +16,9 @@ Scenario steps that is automated in this task as follow:
 ○ current bid
 7. Get the values of these items and print those values to console.
 
+
+Steps to run: 
+1- clone the repo
+2- open "LotTests.java" which under"src/test/java/lots/"
+3- after running the test case open the terminal and use the following command "allure serve" to view the allure report 
+
