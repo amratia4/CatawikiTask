@@ -36,11 +36,14 @@ public class BaseTests {
     //taking a screen shoot
     public void takeScreenshot(ITestResult result) throws IOException {
         //the if statement in case we want to take the screenshot only in case of test cases failing
-       // if(ITestResult.FAILURE == result.getStatus()){
-            var camera = (TakesScreenshot)driver;
-            File screenshot = camera.getScreenshotAs(OutputType.FILE);
-            Files.move(screenshot, new File("resources/screenshots/"+ result.getName() + ".png"));
-       // }
+        // if(ITestResult.FAILURE == result.getStatus()){
+        var camera = (TakesScreenshot)driver;
+        File screenshot = camera.getScreenshotAs(OutputType.FILE);
+        String directory = "resources/screenshots/";
+        File dir = new File(directory);
+        if (!dir.exists()) dir.mkdir();
+        Files.move(screenshot, new File("resources/screenshots/"+ result.getName() + ".png"));
+        // }
     }
 
 
