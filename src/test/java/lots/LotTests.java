@@ -3,6 +3,9 @@ package lots;
 import base.BaseTests;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LotPage;
@@ -17,6 +20,8 @@ public class LotTests extends BaseTests {
 
     CSVReader reader;
     @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Lots Scenario Test case")
 
     public void VerifyLotPage() throws CsvValidationException, IOException {
         //get path for CSV file

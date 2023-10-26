@@ -44,6 +44,12 @@
             <artifactId>opencsv</artifactId>
             <version>5.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.24.0</version>
+        </dependency>
     </dependencies>
 
 </project>
