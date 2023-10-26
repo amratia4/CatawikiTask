@@ -17,6 +17,9 @@ Scenario steps that is automated in this task as follow:
 7. Get the values of these items and print those values to console.
 
 
+Prerequisites: 
+java-21
+
 Steps to run: 
 1. clone the repo
 2. open "LotTests.java" which under"src/test/java/lots/"
