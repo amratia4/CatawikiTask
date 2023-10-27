@@ -41,6 +41,7 @@ public class BaseTests {
         File screenshot = camera.getScreenshotAs(OutputType.FILE);
         String directory = "resources/screenshots/";
         File dir = new File(directory);
+        //check that the screenshot directory is available if not create new one
         if (!dir.exists()) dir.mkdir();
         Files.move(screenshot, new File("resources/screenshots/"+ result.getName() + ".png"));
         // }
