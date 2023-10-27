@@ -24,15 +24,11 @@ public class LotTests extends BaseTests {
             homePage.clickAgreeButton();
             homePage.searchData(searchItem);
             SearchResultsPage searchResultsPage = homePage.clickSearchIcon();
-
             // Assert that we can see the searched item displayed on the search result page
             assertEquals(searchResultsPage.getSearchedItem(), searchItem, "No Search results were found");
-
             // Assert that we can see the number of search results
             assertNotNull(searchResultsPage.getSearchResultsNumber());
-
             LotPage lotPage = searchResultsPage.selecting2ndSearchResult();
-
             // Printing out Lot name, Favorites counter, and current bid
             lotPage.logLotName();
             lotPage.logFavoritesCounter();

@@ -45,6 +45,4 @@ public class BaseTests {
         Files.move(screenshot, new File("resources/screenshots/"+ result.getName() + ".png"));
         // }
     }
-
-
 }
